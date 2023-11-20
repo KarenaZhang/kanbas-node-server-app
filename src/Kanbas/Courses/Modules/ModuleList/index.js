@@ -15,10 +15,8 @@ import {
 import * as client from "../client";
 
 function ModuleList() {
-    const { courseId } = useParams();
-    const modules = useSelector((state) => state.modulesReducer.modules);
-    const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
+    const { courseId } = useParams();
     useEffect( () => {
         client.findModulesForCourse(courseId)
             .then((modules) =>
@@ -39,6 +37,8 @@ function ModuleList() {
         const status = await client.updateModule(module);
         dispatch(updateModule(module));
     };
+    const modules = useSelector((state) => state.modulesReducer.modules);
+    const module = useSelector((state) => state.modulesReducer.module);
 
     return (
         <ul className="list-group wd-assignment-table">

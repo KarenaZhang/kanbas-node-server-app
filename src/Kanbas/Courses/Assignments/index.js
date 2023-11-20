@@ -1,12 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import "./index.css";
 import { FaEllipsisV } from "react-icons/fa";
 import { AiFillCheckCircle, AiFillEdit } from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import DeleteConfirm from "./deleteConfirm.js";
 import { useSelector, useDispatch } from "react-redux";
 import {
     setAssignment,
@@ -15,7 +16,7 @@ import {
     updateAssignment,
     setAssignments,
 } from "./assignmentsReducer";
-import DeleteConfirm from "./deleteConfirm.js";
+
 import * as client from "./client";
 
 function Assignments() {
