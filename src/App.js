@@ -1,36 +1,30 @@
-import "dotenv/config";
-// import Labs from "./Labs";
-// import HelloWorld from "./Labs/a3/HelloWorld";
-// import Kanbas from "./Kanbas";
-// import {HashRouter} from "react-router-dom";
-// import {Routes, Route, Navigate} from "react-router";
-import express from 'express';
-import Hello from "./Kanbas/hello.js";
-import Lab5 from "./Labs/lab5.js";
+import express from "express";
+import HelloRoutes from "./hello.js";
+import Lab5 from "./lab5.js";
+import CourseRoutes from "./kanbas/courses/routes.js";
+import ModuleRoutes from "./kanbas/courses/modules/routes.js";
+import AssignmentRoutes from "./kanbas/courses/Assignments/routes.js";
 import cors from "cors";
-import CourseRoutes from "./Kanbas/courses/routes.js";
-import ModuleRoutes from "./Kanbas/Courses/Modules/routes.js";
-
+import "dotenv/config";
+//import session from "express-session";
 const app = express();
-app.use(cors());
-CourseRoutes(app);
 app.use(express.json());
-ModuleRoutes(app);
+app.use(
+    cors({
+        credentials: true,
+        origin: '*'
+    })
+);
+app.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+    next();
+});
+
 Lab5(app);
-Hello(app);
-app.listen(4000);
+CourseRoutes(app);
+ModuleRoutes(app);
+AssignmentRoutes(app);
+HelloRoutes(app);
 
 
-// function App() {
-//     return (
-//         <HashRouter>
-//             <Routes>
-//                 <Route path="/"         element={<Navigate to="/Kanbas" />} />
-//                 <Route path="/hello"    element={<HelloWorld />} />
-//                 <Route path="/labs/*"   element={<Labs />} />
-//                 <Route path="/Kanbas/*" element={<Kanbas />} />
-//             </Routes>
-//         </HashRouter>
-//     );
-// }
-// export default App;
+app.listen(process.env.PORT || 4000);
