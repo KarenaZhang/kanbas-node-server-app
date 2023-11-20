@@ -1,0 +1,129 @@
+body  {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.wd-main-css-heading {
+    color:green;
+    background-color:yellow;
+}
+
+.wd-fg-color-black {
+    color:black;
+}
+
+.wd-fg-color-white {
+    color:white;
+}
+
+.wd-fg-color-blue {
+    color:#7070ff;
+}
+
+.wd-fg-color-red {
+    color:#ff7070;
+}
+
+.wd-fg-color-green {
+    color:green;
+}
+
+.wd-bg-color-yellow {
+    background-color:#ffff07;
+}
+.wd-bg-color-blue {
+    background-color:#7070ff;
+}
+.wd-bg-color-red {
+    background-color:#ff7070;
+}
+.wd-bg-color-green {
+    background-color:green;
+}
+.wd-bg-color-black {
+    background-color:black;
+}
+
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
+
+
+
+
+
+
+/* styles.css */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Apply margins and padding to breadcrumb */
+.breadcrumb {
+    margin: 20px; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.breadcrumb-item {
+    margin: 0; /* Adjust margin as needed */
+    padding: 0 5px; /* Adjust padding as needed */
+}
+
+/* Apply padding to buttons */
+.btn {
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Apply margins and padding to sidebar */
+.wd-kanbas-navigation {
+    margin: 0; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Apply margins and padding to course navigation */
+.wd-course-navigation {
+    margin: 0; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Apply padding to the status bar */
+.wd-bg-color-green {
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* styles.css */
+/* Make hyperlinks red and remove underlines */
+a {
+    color: red; /* Set the text color to red */
+    text-decoration: none; /* Remove underlines */
+}
+
+/* styles.css */
+/* Make hyperlinks red and remove underlines */
+a {
+    color: red; /* Set the text color to red */
+    text-decoration: none; /* Remove underlines */
+}
+
+
+.container {
+    padding: 20px; /* Add padding around the container */
+}
+.table {
+    margin-bottom: 20px; /* Add margin below the table */
+}
+.btn {
+    margin-right: 10px; /* Add margin between buttons */
+}
+

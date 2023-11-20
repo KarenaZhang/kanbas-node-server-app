@@ -1,0 +1,10 @@
+
+.list-group-item h4 {
+    font-size: 1.2em;
+}
+
+.wd-assignment-table .wd-module-icon {
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
