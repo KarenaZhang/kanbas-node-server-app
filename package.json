@@ -3,6 +3,7 @@
   "name": "kanbas-react-web-app",
   "version": "0.1.0",
   "private": true,
+  "main": "app.js",
   "engines": {
     "node": ">=20.6.1"
   },
@@ -29,7 +30,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node app.js",
     "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

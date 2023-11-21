@@ -1,9 +1,9 @@
 import express from "express";
-import HelloRoutes from "./hello.js";
-import Lab5 from "./lab5.js";
-import CourseRoutes from "./kanbas/courses/routes.js";
-import ModuleRoutes from "./kanbas/courses/modules/routes.js";
-import AssignmentRoutes from "./kanbas/courses/Assignments/routes.js";
+import HelloRoutes from "./src/hello.js";
+import Lab5 from "./src/lab5.js";
+import CourseRoutes from "./src/Kanbas/Courses/routes.js";
+import ModuleRoutes from "./src/Kanbas/Courses/Modules/routes.js";
+import AssignmentRoutes from "./src/Kanbas/Courses/Assignments/routes.js";
 import cors from "cors";
 import "dotenv/config";
 //import session from "express-session";
