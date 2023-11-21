@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "kanbas-react-web-app",
+  "name": "kanbas-node-server-app",
   "version": "0.1.0",
   "private": true,
   "main": "app.js",

@@ -6,7 +6,7 @@ import ModuleRoutes from "./src/Kanbas/Courses/Modules/routes.js";
 import AssignmentRoutes from "./src/Kanbas/Courses/Assignments/routes.js";
 import cors from "cors";
 import "dotenv/config";
-//import session from "express-session";
+
 
 const app = express();
 app.use(express.json());
@@ -26,6 +26,5 @@ CourseRoutes(app);
 ModuleRoutes(app);
 AssignmentRoutes(app);
 HelloRoutes(app);
-
 
 app.listen(process.env.PORT || 4000);
