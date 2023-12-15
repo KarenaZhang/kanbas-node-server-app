@@ -8,7 +8,7 @@ import express from 'express';
 import Hello from "./Kanbas/hello.js";
 import Lab5 from "./Labs/Lab5.js";
 import cors from "cors";
-import CourseRoutes from "./Kanbas/Courses/routes";
+import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Courses/Modules/routes.js";
 import session from "express-session";
 import UserRoutes from "./users/routes.js";
