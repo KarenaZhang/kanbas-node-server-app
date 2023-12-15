@@ -22,7 +22,14 @@ const app = express();
 app.use(
     cors({
         credentials: true,
-        origin: process.env.FRONTEND_URL
+        origin: (origin, callback) => {
+            const allowedOrigins = ["http://localhost:3000", "https://dancing-cannoli-8404bf.netlify.app"];
+            if (!origin || allowedOrigins.includes(origin)) {
+                callback(null, true);
+            } else {
+                callback(new Error("Not allowed by CORS"));
+            }
+        },
     })
 );
 const sessionOptions = {
@@ -59,6 +66,7 @@ ModuleRoutes(app);
 UserRoutes(app);
 Lab5(app);
 Hello(app);
+
 app.listen(4000);
 
 
