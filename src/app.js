@@ -6,7 +6,7 @@ import "dotenv/config";
 // import {Routes, Route, Navigate} from "react-router";
 import express from 'express';
 import Hello from "./Kanbas/hello.js";
-import Lab5 from "./Labs/lab5.js";
+import Lab5 from "./Labs/Lab5.js";
 import cors from "cors";
 import CourseRoutes from "./Kanbas/courses/routes.js";
 import ModuleRoutes from "./Kanbas/Courses/Modules/routes.js";
