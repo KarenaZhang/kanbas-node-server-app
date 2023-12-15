@@ -11,7 +11,7 @@ import cors from "cors";
 import CourseRoutes from "./Kanbas/courses/routes.js";
 import ModuleRoutes from "./Kanbas/Courses/Modules/routes.js";
 import session from "express-session";
-import UserRoutes from "../users/routes.js";
+import UserRoutes from "./users/routes.js";
 
 import mongoose from "mongoose";
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
