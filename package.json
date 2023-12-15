@@ -22,7 +22,7 @@
     "react-router-dom": "^6.17.0",
     "react-scripts": "^4.0.3",
     "redux": "^4.2.1",
-    "web-vitals": "^2.reacrerere1.4"
+    "web-vitals": "latest"
   },
   "scripts": {
     "start": "node ./src/app.js",
